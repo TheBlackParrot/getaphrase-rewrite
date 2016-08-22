@@ -88,8 +88,7 @@ class Noun():
 			return;
 
 	def __str__(self):
-		# for now
-		return self.word;
+		return self.final;
 
 
 class Article():
@@ -202,17 +201,7 @@ class TemplateString():
 		final = [];
 
 		for part in self.parts:
-			if type(part) == Noun:
-				final.append(part.final);
-			
-			elif type(part) == Article:
-				if self.plural_phrase:
-					final.append("the");
-				else:
-					final.append(str(part));
-			
-			else:
-				final.append(part);
+				final.append(str(part));
 
 		return " ".join(final);
 

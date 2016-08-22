@@ -1,4 +1,18 @@
+import json;
+import sys;
+import random;
+
 vowels = ["a", "e", "i", "o", "u"];
+nouns = [];
+
+
+try:
+	with open('nouns.json', 'r') as file:
+		nouns = json.load(file);
+except:
+	sys.exit("couldn't load nouns!");
+
+
 
 class Noun():
 	def __init__(self, word=None, can_be_plural=True, proper=False, plural_form=None):
@@ -41,6 +55,18 @@ class Noun():
 			return word;
 
 
+class Article():
+	def __init__(self):
+		arts = ["a", "the"];
+		self.art = random.choice(arts);
+
+	def needs_n(self):
+		self.art += "n";
+
+	def __str__(self):
+		return self.art;
+
+
 
 class TemplateString():
 	def __init__(self, data):
@@ -49,6 +75,9 @@ class TemplateString():
 		self.raw_parts = data.split(" ");
 		self.parts = [];
 
+		global nouns;
+		global vowels;
+
 		for raw_part in self.raw_parts:
 			if raw_part[0] == "[" and raw_part[-1:] == "]":
 				part_data = raw_part[1:-1];
@@ -56,12 +85,20 @@ class TemplateString():
 				args = part_data.split(" ");
 
 				if args[0] == "noun":
-					word = {
-						"word": "cake"
-					}
-					self.parts.append(Noun(**word));
+					noun = random.choice(nouns)
+					self.parts.append(Noun(**noun));
+
+				elif args[0] == "article":
+					self.parts.append(Article());
 			else:
 				self.parts.append(raw_part);
+
+		for index, part in enumerate(self.parts):
+			if type(part) == Article:
+				if index < len(self.parts):
+					if self.parts[index+1].word[0] in vowels and str(part) in vowels:
+						part.needs_n();
+
 
 	def __str__(self):
 		final = [];
@@ -69,6 +106,8 @@ class TemplateString():
 		for part in self.parts:
 			if type(part) == Noun:
 				final.append(part.word);
+			elif type(part) == Article:
+				final.append(str(part));
 			else:
 				final.append(part);
 
@@ -82,5 +121,5 @@ test = Noun(**word);
 print(test.plural());
 '''
 
-test = TemplateString("this is a [noun]");
+test = TemplateString("this is [article] [noun]");
 print(str(test));

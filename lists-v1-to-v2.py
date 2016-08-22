@@ -59,3 +59,39 @@ try:
 		json.dump(nouns_out, file, indent=4, sort_keys=True);
 except:
 	sys.exit("couldn't write new noun db");
+
+
+adj_out = [];
+
+for adj in adjectives:
+	adj_out.append(adj.strip());
+
+try:
+	with open("adjectives.json", 'w') as file:
+		json.dump(adj_out, file, indent=4, sort_keys=True);
+except:
+	sys.exit("couldn't write new adj db");
+
+
+phrases_s_out = [];
+
+for phrase in phrases_s:
+	phrases_s_out.append(phrase.strip());
+
+try:
+	with open("phrases_s.json", 'w') as file:
+		json.dump(phrases_s_out, file, indent=4, sort_keys=True);
+except:
+	sys.exit("couldn't write new phrases_s db");
+
+
+phrases_p_out = [];
+
+for phrase in phrases_p:
+	phrases_p_out.append(phrase.strip());
+
+try:
+	with open("phrases_p.json", 'w') as file:
+		json.dump(phrases_p_out, file, indent=4, sort_keys=True);
+except:
+	sys.exit("couldn't write new phrases_p db");

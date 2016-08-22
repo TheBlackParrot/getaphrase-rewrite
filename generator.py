@@ -5,6 +5,7 @@ import random;
 vowels = ["a", "e", "i", "o", "u"];
 nouns = [];
 adjectives = [];
+phrases_s = [];
 
 
 try:
@@ -19,10 +20,17 @@ try:
 except:
 	sys.exit("couldn't load adjectives!");
 
+# TODO: Merge singular/plural phrases and just make it an argument
+try:
+	with open('phrases_s.json', 'r') as file:
+		phrases_s = json.load(file);
+except:
+	sys.exit("couldn't load phrases_s!");
+
 
 
 class Noun():
-	def __init__(self, word=None, can_be_plural=True, proper=False, plural_form=None):
+	def __init__(self, args, word=None, can_be_plural=True, proper=False, plural_form=None):
 		if not word:
 			return;
 
@@ -31,12 +39,17 @@ class Noun():
 		self.proper = proper;
 		self.plural_form = plural_form;
 
+		self.final = word;
+
+		self.args = args;
+
 	def plural(self):
 		word = self.word;
 
 		if self.can_be_plural:
 			if self.plural_form:
-				return self.plural_form;
+				self.final = self.plural_form;
+				return;
 
 			global vowels;
 
@@ -46,20 +59,26 @@ class Noun():
 			bypass_check = ["ch", "sh"];
 			if last_2 not in bypass_check:
 				if last_char == "o" or last_char == "x" or last_char == "s":
-					return word + "es";
+					self.final = word + "es";
+					return;
 
 				elif last_char == "y":
 					if word[-2:-1] in vowels:
-						return word + "s";
+						self.final = word + "s";
+						return;
 					else:
-						return word[:-1] + "ies";
+						self.final = word[:-1] + "ies";
+						return;
 
 				else:
-					return word + "s";
+					self.final = word + "s";
+					return;
 			else:
-				return word + "es";
+				self.final = word + "es";
+				return;
 		else:
-			return word;
+			self.final = word;
+			return;
 
 	def __str__(self):
 		# for now
@@ -67,9 +86,14 @@ class Noun():
 
 
 class Article():
-	def __init__(self):
+	def __init__(self, args):
 		arts = ["a", "the"];
 		self.art = random.choice(arts);
+
+		self.args = args;
+
+	def plural(self):
+		self.art = "the";
 
 	def needs_n(self):
 		self.art += "n";
@@ -79,7 +103,7 @@ class Article():
 
 
 class Adjective():
-	def __init__(self):
+	def __init__(self, args):
 		global adjectives;
 
 		self.parts = set();
@@ -87,6 +111,8 @@ class Adjective():
 			self.parts.add(random.choice(adjectives));
 
 		self.parts.add(random.choice(adjectives));
+
+		self.args = args;
 
 	def __str__(self):
 		return " ".join(str(part) for part in self.parts);
@@ -100,6 +126,8 @@ class TemplateString():
 		self.raw_parts = data.split(" ");
 		self.parts = [];
 
+		self.plural_phrase = False;
+
 		global nouns;
 		global vowels;
 
@@ -110,14 +138,14 @@ class TemplateString():
 				args = part_data.split(":");
 
 				if args[0] == "noun":
-					noun = random.choice(nouns)
-					self.parts.append(Noun(**noun));
+					noun = random.choice(nouns);
+					self.parts.append(Noun(args, **noun));
 
 				elif args[0] == "article":
-					self.parts.append(Article());
+					self.parts.append(Article(args));
 
 				elif args[0] == "adjective":
-					self.parts.append(str(Adjective()));
+					self.parts.append(str(Adjective(args)));
 			else:
 				self.parts.append(raw_part);
 
@@ -136,28 +164,48 @@ class TemplateString():
 					if next[0] in vowels and str(part) in vowels:
 						part.needs_n();
 
+			if type(part) == Noun:
+				if "singular" not in part.args:
+					if not random.randint(0, 2) or "plural" in part.args:
+						self.plural_phrase = True;
+						part.plural();
+
+		if self.plural_phrase:
+			self.phrase_is_plural();
+
+
+	def phrase_is_plural(self):
+		for part in self.parts:
+			if type(part) == Article:
+				part.plural();
+
 
 	def __str__(self):
 		final = [];
 
 		for part in self.parts:
 			if type(part) == Noun:
-				final.append(part.word);
+				final.append(part.final);
+			
 			elif type(part) == Article:
-				final.append(str(part));
+				if self.plural_phrase:
+					final.append("the");
+				else:
+					final.append(str(part));
+			
 			else:
 				final.append(part);
 
 		return " ".join(final);
 
-'''
-word = {
-	"word": "ox"
-}
-test = Noun(**word);
-print(test.plural());
-'''
-
 for i in range(0, 20):
-	test = TemplateString("this is [article] [adjective] [noun]");
+	main_choices = [
+		"[adjective] [noun]",
+		"[article] [adjective] [noun]"
+	]
+	template = random.choice(main_choices);
+	if not random.randint(0, 3):
+		template = random.choice(phrases_s);
+
+	test = TemplateString(template);
 	print(str(test));

@@ -100,6 +100,8 @@ class Article():
 		self.args = args;
 
 	def plural(self):
+		if "singular" in self.args:
+			return;
 		self.art = "the";
 
 	def needs_n(self):

@@ -4,6 +4,7 @@ import random;
 
 vowels = ["a", "e", "i", "o", "u"];
 nouns = [];
+adjectives = [];
 
 
 try:
@@ -11,6 +12,12 @@ try:
 		nouns = json.load(file);
 except:
 	sys.exit("couldn't load nouns!");
+
+try:
+	with open('adjectives.json', 'r') as file:
+		adjectives = json.load(file);
+except:
+	sys.exit("couldn't load adjectives!");
 
 
 
@@ -71,6 +78,20 @@ class Article():
 		return self.art;
 
 
+class Adjective():
+	def __init__(self):
+		global adjectives;
+
+		self.parts = set();
+		if not random.randint(0, 2):
+			self.parts.add(random.choice(adjectives));
+
+		self.parts.add(random.choice(adjectives));
+
+	def __str__(self):
+		return " ".join(str(part) for part in self.parts);
+
+
 
 class TemplateString():
 	def __init__(self, data):
@@ -86,7 +107,7 @@ class TemplateString():
 			if raw_part[0] == "[" and raw_part[-1:] == "]":
 				part_data = raw_part[1:-1];
 
-				args = part_data.split(" ");
+				args = part_data.split(":");
 
 				if args[0] == "noun":
 					noun = random.choice(nouns)
@@ -94,6 +115,9 @@ class TemplateString():
 
 				elif args[0] == "article":
 					self.parts.append(Article());
+
+				elif args[0] == "adjective":
+					self.parts.append(str(Adjective()));
 			else:
 				self.parts.append(raw_part);
 
@@ -135,5 +159,5 @@ print(test.plural());
 '''
 
 for i in range(0, 20):
-	test = TemplateString("this is [article] [noun]");
+	test = TemplateString("this is [article] [adjective] [noun]");
 	print(str(test));

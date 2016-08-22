@@ -54,10 +54,14 @@ class Noun():
 		else:
 			return word;
 
+	def __str__(self):
+		# for now
+		return self.word;
+
 
 class Article():
 	def __init__(self):
-		arts = ["a", "the"];
+		arts = ["a"];
 		self.art = random.choice(arts);
 
 	def needs_n(self):
@@ -96,7 +100,16 @@ class TemplateString():
 		for index, part in enumerate(self.parts):
 			if type(part) == Article:
 				if index < len(self.parts):
-					if self.parts[index+1].word[0] in vowels and str(part) in vowels:
+					next = self.parts[index+1];
+
+					if type(next) == Noun:
+						if next.proper:
+							self.parts.remove(part);
+							continue;
+
+						next = next.word;
+
+					if next[0] in vowels and str(part) in vowels:
 						part.needs_n();
 
 
@@ -121,5 +134,6 @@ test = Noun(**word);
 print(test.plural());
 '''
 
-test = TemplateString("this is [article] [noun]");
-print(str(test));
+for i in range(0, 20):
+	test = TemplateString("this is [article] [noun]");
+	print(str(test));

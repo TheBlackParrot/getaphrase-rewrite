@@ -61,7 +61,7 @@ class Noun():
 
 class Article():
 	def __init__(self):
-		arts = ["a"];
+		arts = ["a", "the"];
 		self.art = random.choice(arts);
 
 	def needs_n(self):

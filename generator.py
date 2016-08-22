@@ -7,7 +7,6 @@ nouns = [];
 adjectives = [];
 phrases_s = [];
 
-
 try:
 	with open('nouns.json', 'r') as file:
 		nouns = json.load(file);
@@ -27,6 +26,14 @@ try:
 except:
 	sys.exit("couldn't load phrases_s!");
 
+
+proper_nouns = [];
+nonproper_nouns = [];
+for noun in nouns:
+	if noun["proper"]:
+		proper_nouns.append(noun);
+	else:
+		nonproper_nouns.append(noun);
 
 
 class Noun():
@@ -129,6 +136,8 @@ class TemplateString():
 		self.plural_phrase = False;
 
 		global nouns;
+		global proper_nouns;
+		global nonproper_nouns;
 		global vowels;
 
 		for raw_part in self.raw_parts:
@@ -138,7 +147,13 @@ class TemplateString():
 				args = part_data.split(":");
 
 				if args[0] == "noun":
-					noun = random.choice(nouns);
+					if "proper" in args:
+						noun = random.choice(proper_nouns);
+					elif "nonproper" in args:
+						noun = random.choice(nonproper_nouns);
+					else:
+						noun = random.choice(nouns);
+
 					self.parts.append(Noun(args, **noun));
 
 				elif args[0] == "article":
@@ -165,10 +180,11 @@ class TemplateString():
 						part.needs_n();
 
 			if type(part) == Noun:
-				if "singular" not in part.args:
-					if not random.randint(0, 2) or "plural" in part.args:
-						self.plural_phrase = True;
-						part.plural();
+				if part.can_be_plural:
+					if "singular" not in part.args:
+						if not random.randint(0, 2) or "plural" in part.args:
+							self.plural_phrase = True;
+							part.plural();
 
 		if self.plural_phrase:
 			self.phrase_is_plural();

@@ -240,7 +240,7 @@ for i in range(0, 20):
 	main_choices = [
 		"[adjective] [noun]",
 		"[article] [adjective] [noun]",
-		#"omg, i love [adjective] [noun:plural]!"
+		"omg, i love [adjective] [noun:plural]!",
 		"hey [noun:proper], here's your [adjective] [noun]"
 	]
 	template = random.choice(main_choices);

@@ -7719,5 +7719,10 @@
     {
         "can_be_plural": true,
         "word": "tent"
+    },
+    {
+        "word": "Harambe",
+        "can_be_plural": false,
+        "proper": true
     }
 ]

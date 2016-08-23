@@ -1,6 +1,7 @@
 import json;
 import sys;
 import random;
+import re;
 
 vowels = ["a", "e", "i", "o", "u"];
 nouns = [];
@@ -29,14 +30,17 @@ except:
 proper_nouns = [];
 nonproper_nouns = [];
 for noun in nouns:
-	if noun["proper"]:
-		proper_nouns.append(noun);
+	if "proper" in noun:
+		if noun["proper"]:
+			proper_nouns.append(noun);
+		else:
+			nonproper_nouns.append(noun);
 	else:
 		nonproper_nouns.append(noun);
 
 
 class Noun():
-	def __init__(self, args, word=None, can_be_plural=True, proper=False, plural_form=None):
+	def __init__(self, args, word=None, can_be_plural=True, proper=False, plural_form=None, only_plural=False):
 		if not word:
 			return;
 
@@ -44,6 +48,7 @@ class Noun():
 		self.can_be_plural = can_be_plural;
 		self.proper = proper;
 		self.plural_form = plural_form;
+		self.only_plural = only_plural;
 
 		self.final = word;
 
@@ -55,6 +60,9 @@ class Noun():
 		if self.can_be_plural:
 			if self.plural_form:
 				self.final = self.plural_form;
+				return;
+
+			if self.only_plural:
 				return;
 
 			global vowels;
@@ -124,8 +132,16 @@ class Adjective():
 	def __str__(self):
 		return " ".join(str(part) for part in self.parts);
 
+class AfterStr():
+	def __init__(self, data):
+		self.data = data;
+
+	def __str__(self):
+		return self.data;
 
 
+#reg_safe_part = re.compile(r'[^0-9a-zA-Z\]\:\[]+');
+reg_safe_part = re.compile(r'\].*');
 class TemplateString():
 	def __init__(self, data):
 		self.raw = data;
@@ -139,12 +155,18 @@ class TemplateString():
 		global proper_nouns;
 		global nonproper_nouns;
 		global vowels;
+		global reg_safe_part;
 
 		for raw_part in self.raw_parts:
-			if raw_part[0] == "[" and raw_part[-1:] == "]":
-				part_data = raw_part[1:-1];
+			safe_part = reg_safe_part.sub('', raw_part) + "]";
+			after = raw_part.replace(safe_part, "");
+
+			if safe_part[0] == "[" and safe_part[-1:] == "]":
+				part_data = safe_part[1:-1];
 
 				args = part_data.split(":");
+				if after:
+					args.append(AfterStr(after));
 
 				if args[0] == "noun":
 					if "proper" in args:
@@ -185,6 +207,11 @@ class TemplateString():
 						if not random.randint(0, 2) or "plural" in part.args:
 							self.plural_phrase = True;
 							part.plural();
+					elif "singular" in part.args:
+						while part.only_plural:
+							_ = part.args
+							part = Noun(_, **random.choice(nouns));
+
 
 		if self.plural_phrase:
 			self.phrase_is_plural();
@@ -200,14 +227,21 @@ class TemplateString():
 		final = [];
 
 		for part in self.parts:
-				final.append(str(part));
+			if hasattr(part, 'args'):
+				if type(part.args[len(part.args)-1]) == AfterStr:
+					final.append(str(part) + str(part.args[len(part.args)-1]));
+					continue;
+
+			final.append(str(part));
 
 		return " ".join(final);
 
 for i in range(0, 20):
 	main_choices = [
 		"[adjective] [noun]",
-		"[article] [adjective] [noun]"
+		"[article] [adjective] [noun]",
+		#"omg, i love [adjective] [noun:plural]!"
+		"hey [noun:proper], here's your [adjective] [noun]"
 	]
 	template = random.choice(main_choices);
 	if not random.randint(0, 3):

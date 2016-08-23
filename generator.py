@@ -5,7 +5,7 @@ import random;
 vowels = ["a", "e", "i", "o", "u"];
 nouns = [];
 adjectives = [];
-phrases_s = [];
+phrases = [];
 
 try:
 	with open('nouns.json', 'r') as file:
@@ -19,12 +19,11 @@ try:
 except:
 	sys.exit("couldn't load adjectives!");
 
-# TODO: Merge singular/plural phrases and just make it an argument
 try:
-	with open('phrases_s.json', 'r') as file:
-		phrases_s = json.load(file);
+	with open('phrases.json', 'r') as file:
+		phrases = json.load(file);
 except:
-	sys.exit("couldn't load phrases_s!");
+	sys.exit("couldn't load phrases!");
 
 
 proper_nouns = [];
@@ -212,7 +211,7 @@ for i in range(0, 20):
 	]
 	template = random.choice(main_choices);
 	if not random.randint(0, 3):
-		template = random.choice(phrases_s);
+		template = random.choice(phrases);
 
 	test = TemplateString(template);
 	print(str(test));

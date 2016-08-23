@@ -24,16 +24,10 @@
         "word": "grape"
     },
     {
-        "can_be_plural": false,
-        "plural_form": null,
+        "can_be_plural": true,
+        "plural_form": "cacti",
         "proper": false,
         "word": "cactus"
-    },
-    {
-        "can_be_plural": false,
-        "plural_form": null,
-        "proper": false,
-        "word": "cacti"
     },
     {
         "can_be_plural": true,
@@ -114,16 +108,10 @@
         "word": "gamer"
     },
     {
-        "can_be_plural": false,
-        "plural_form": null,
+        "can_be_plural": true,
+        "plural_form": "wolves",
         "proper": false,
         "word": "wolf"
-    },
-    {
-        "can_be_plural": false,
-        "plural_form": null,
-        "proper": false,
-        "word": "wolves"
     },
     {
         "can_be_plural": true,
@@ -162,28 +150,16 @@
         "word": "television"
     },
     {
-        "can_be_plural": false,
-        "plural_form": null,
+        "can_be_plural": true,
+        "plural_form": "men",
         "proper": false,
         "word": "man"
     },
     {
-        "can_be_plural": false,
-        "plural_form": null,
-        "proper": false,
-        "word": "men"
-    },
-    {
-        "can_be_plural": false,
-        "plural_form": null,
+        "can_be_plural": true,
+        "plural_form": "women",
         "proper": false,
         "word": "woman"
-    },
-    {
-        "can_be_plural": false,
-        "plural_form": null,
-        "proper": false,
-        "word": "women"
     },
     {
         "can_be_plural": true,
@@ -204,10 +180,11 @@
         "word": "baby"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
-        "word": "music"
+        "word": "music",
+        "only_plural": true
     },
     {
         "can_be_plural": true,
@@ -384,16 +361,10 @@
         "word": "tongue"
     },
     {
-        "can_be_plural": false,
-        "plural_form": null,
+        "can_be_plural": true,
+        "plural_form": "feet",
         "proper": false,
         "word": "foot"
-    },
-    {
-        "can_be_plural": false,
-        "plural_form": null,
-        "proper": false,
-        "word": "feet"
     },
     {
         "can_be_plural": true,
@@ -684,19 +655,13 @@
         "word": "melody"
     },
     {
-        "can_be_plural": false,
-        "plural_form": null,
+        "can_be_plural": true,
+        "plural_form": "shelves",
         "proper": false,
         "word": "shelf"
     },
     {
-        "can_be_plural": false,
-        "plural_form": null,
-        "proper": false,
-        "word": "shelves"
-    },
-    {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
         "word": "debt"
@@ -717,19 +682,22 @@
         "can_be_plural": false,
         "plural_form": null,
         "proper": false,
-        "word": "pants"
+        "word": "pants",
+        "only_plural": true
     },
     {
         "can_be_plural": false,
         "plural_form": null,
         "proper": false,
-        "word": "jeans"
+        "word": "jeans",
+        "only_plural": true
     },
     {
         "can_be_plural": false,
         "plural_form": null,
         "proper": false,
-        "word": "shorts"
+        "word": "shorts",
+        "only_plural": true
     },
     {
         "can_be_plural": true,
@@ -855,7 +823,8 @@
         "can_be_plural": false,
         "plural_form": null,
         "proper": false,
-        "word": "feces"
+        "word": "feces",
+        "only_plural": true
     },
     {
         "can_be_plural": true,
@@ -864,7 +833,7 @@
         "word": "liquid"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
         "word": "water"
@@ -885,31 +854,27 @@
         "can_be_plural": false,
         "plural_form": null,
         "proper": false,
-        "word": "bacon"
+        "word": "bacon",
+        "only_plural": true
     },
     {
         "can_be_plural": false,
         "plural_form": null,
         "proper": false,
-        "word": "anything"
+        "word": "anything",
+        "only_plural": true
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
         "word": "something"
     },
     {
-        "can_be_plural": false,
-        "plural_form": null,
+        "can_be_plural": true,
+        "plural_form": "people",
         "proper": false,
         "word": "person"
-    },
-    {
-        "can_be_plural": false,
-        "plural_form": null,
-        "proper": false,
-        "word": "people"
     },
     {
         "can_be_plural": true,
@@ -948,7 +913,7 @@
         "word": "opinion"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
         "word": "art"
@@ -960,10 +925,11 @@
         "word": "musician"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
-        "word": "math"
+        "word": "math",
+        "only_plural": true
     },
     {
         "can_be_plural": true,
@@ -1020,10 +986,11 @@
         "word": "fetish"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
-        "word": "corn"
+        "word": "corn",
+        "only_plural": true
     },
     {
         "can_be_plural": true,
@@ -1098,16 +1065,18 @@
         "word": "piece"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
-        "word": "anime"
+        "word": "anime",
+        "only_plural": true
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
-        "word": "manga"
+        "word": "manga",
+        "only_plural": true
     },
     {
         "can_be_plural": true,
@@ -1158,10 +1127,11 @@
         "word": "gun"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
-        "word": "rights"
+        "word": "rights",
+        "only_plural": true
     },
     {
         "can_be_plural": true,
@@ -1230,16 +1200,17 @@
         "word": "search"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
         "word": "thunder"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
-        "word": "lightning"
+        "word": "lightning",
+        "only_plural": true
     },
     {
         "can_be_plural": true,
@@ -1274,7 +1245,7 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Jesus"
     },
     {
@@ -1290,7 +1261,7 @@
         "word": "being"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
         "word": "religion"
@@ -1314,10 +1285,11 @@
         "word": "status"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
-        "word": "bingo"
+        "word": "bingo",
+        "only_plural": true
     },
     {
         "can_be_plural": true,
@@ -1356,22 +1328,24 @@
         "word": "mate"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
-        "word": "mail"
+        "word": "mail",
+        "only_plural": true
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
         "word": "writing"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
-        "word": "steam"
+        "word": "steam",
+        "only_plural": true
     },
     {
         "can_be_plural": true,
@@ -1476,10 +1450,11 @@
         "word": "carpet"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
-        "word": "vomit"
+        "word": "vomit",
+        "only_plural": true
     },
     {
         "can_be_plural": true,
@@ -1526,37 +1501,37 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Santa Claus"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Easter Bunny"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Christmas"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Paris"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "London"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "New York"
     },
     {
@@ -1574,37 +1549,37 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Miami"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Denver"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Los Angeles"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Twitter"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Facebook"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Tumblr"
     },
     {
@@ -1646,7 +1621,7 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "LEGO"
     },
     {
@@ -1662,10 +1637,11 @@
         "word": "remote"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
-        "word": "sandals"
+        "word": "sandals",
+        "only_plural": true
     },
     {
         "can_be_plural": true,
@@ -1767,7 +1743,8 @@
         "can_be_plural": false,
         "plural_form": null,
         "proper": false,
-        "word": "trash"
+        "word": "trash",
+        "only_plural": true
     },
     {
         "can_be_plural": true,
@@ -1899,7 +1876,8 @@
         "can_be_plural": false,
         "plural_form": null,
         "proper": false,
-        "word": "toilet paper"
+        "word": "toilet paper",
+        "only_plural": true
     },
     {
         "can_be_plural": true,
@@ -2030,13 +2008,13 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Godzilla"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Chris Pratt"
     },
     {
@@ -2048,19 +2026,19 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Tony Hawk"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Obama"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "George Bush"
     },
     {
@@ -2106,8 +2084,8 @@
         "word": "wind"
     },
     {
-        "can_be_plural": false,
-        "plural_form": null,
+        "can_be_plural": true,
+        "plural_form": "leaves",
         "proper": false,
         "word": "leaf"
     },
@@ -2220,8 +2198,8 @@
         "word": "furry"
     },
     {
-        "can_be_plural": false,
-        "plural_form": null,
+        "can_be_plural": true,
+        "plural_form": "scarves",
         "proper": false,
         "word": "scarf"
     },
@@ -2271,7 +2249,8 @@
         "can_be_plural": false,
         "plural_form": null,
         "proper": false,
-        "word": "evidence"
+        "word": "evidence",
+        "only_plural": true
     },
     {
         "can_be_plural": true,
@@ -2444,14 +2423,15 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Seinfeld"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
         "proper": false,
-        "word": "ice cream"
+        "word": "ice cream",
+        "only_plural": true
     },
     {
         "can_be_plural": true,
@@ -2520,7 +2500,7 @@
         "word": "jock"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
         "word": "porn"
@@ -2562,7 +2542,7 @@
         "word": "currency"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
         "word": "cheddar cheese"
@@ -2862,10 +2842,11 @@
         "word": "basket"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
-        "word": "laundry"
+        "word": "laundry",
+        "only_plural": true
     },
     {
         "can_be_plural": true,
@@ -2922,19 +2903,21 @@
         "word": "feeling"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
-        "word": "ammuntion"
+        "word": "ammuntion",
+        "only_plural": true
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
-        "word": "health"
+        "word": "health",
+        "only_plural": true
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
         "word": "armor"
@@ -2985,10 +2968,11 @@
         "can_be_plural": false,
         "plural_form": null,
         "proper": false,
-        "word": "oatmeal"
+        "word": "oatmeal",
+        "only_plural": true
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
         "word": "cereal"
@@ -3222,10 +3206,11 @@
         "word": "thing"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
-        "word": "stuff"
+        "word": "stuff",
+        "only_plural": true
     },
     {
         "can_be_plural": true,
@@ -3294,7 +3279,7 @@
         "word": "ethic"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
         "word": "journalism"
@@ -3378,7 +3363,7 @@
         "word": "exit"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
         "word": "science"
@@ -3404,7 +3389,7 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Walmart"
     },
     {
@@ -3464,25 +3449,25 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Zelda"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Mario"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Luigi"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Pokemon"
     },
     {
@@ -3500,7 +3485,7 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Jennifer Anniston"
     },
     {
@@ -3518,19 +3503,19 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Brad Pitt"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Pluto"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "NASA"
     },
     {
@@ -3680,7 +3665,7 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Skrillex"
     },
     {
@@ -3756,8 +3741,8 @@
         "word": "fork"
     },
     {
-        "can_be_plural": false,
-        "plural_form": null,
+        "can_be_plural": true,
+        "plural_form": "knives",
         "proper": false,
         "word": "knife"
     },
@@ -3990,8 +3975,8 @@
         "word": "troll"
     },
     {
-        "can_be_plural": false,
-        "plural_form": null,
+        "can_be_plural": true,
+        "plural_form": "elves",
         "proper": false,
         "word": "elf"
     },
@@ -4050,13 +4035,13 @@
         "word": "mayonnaise"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
         "word": "frost"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
         "word": "dew"
@@ -4080,7 +4065,7 @@
         "word": "meetup"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
         "word": "propaganda"
@@ -4364,7 +4349,7 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Einstein"
     },
     {
@@ -4446,7 +4431,7 @@
         "word": "latch"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
         "word": "rubber"
@@ -4461,7 +4446,8 @@
         "can_be_plural": false,
         "plural_form": null,
         "proper": false,
-        "word": "styrofoam"
+        "word": "styrofoam",
+        "only_plural": true
     },
     {
         "can_be_plural": true,
@@ -4568,7 +4554,7 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Starlord"
     },
     {
@@ -4578,15 +4564,16 @@
         "word": "raccoon"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
-        "word": "goggles"
+        "word": "goggles",
+        "only_plural": true
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Google"
     },
     {
@@ -4658,19 +4645,19 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Pepsi"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Coca-Cola"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Mountain Dew"
     },
     {
@@ -4701,7 +4688,8 @@
         "can_be_plural": false,
         "plural_form": null,
         "proper": false,
-        "word": "junk"
+        "word": "junk",
+        "only_plural": true
     },
     {
         "can_be_plural": true,
@@ -4844,14 +4832,14 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
-        "word": "climate change"
+        "proper": true,
+        "word": "Climate Change"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
-        "word": "global warming"
+        "proper": true,
+        "word": "Global Warming"
     },
     {
         "can_be_plural": true,
@@ -4886,13 +4874,13 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Gabe Newell"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Bill Gates"
     },
     {
@@ -4944,10 +4932,11 @@
         "word": "prediction"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
-        "word": "research"
+        "word": "research",
+        "only_plural": true
     },
     {
         "can_be_plural": true,
@@ -5316,10 +5305,11 @@
         "word": "squid"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
-        "word": "sweepstakes"
+        "word": "sweepstakes",
+        "only_plural": true
     },
     {
         "can_be_plural": true,
@@ -5370,10 +5360,11 @@
         "word": "IRL"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
-        "word": "species"
+        "word": "species",
+        "only_plural": true
     },
     {
         "can_be_plural": true,
@@ -5388,10 +5379,11 @@
         "word": "weapon"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
-        "word": "caffiene"
+        "word": "caffiene",
+        "only_plural": true
     },
     {
         "can_be_plural": true,
@@ -5448,10 +5440,11 @@
         "word": "circus"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
-        "word": "media"
+        "word": "media",
+        "only_plural": true
     },
     {
         "can_be_plural": true,
@@ -5772,16 +5765,10 @@
         "word": "web"
     },
     {
-        "can_be_plural": false,
-        "plural_form": null,
+        "can_be_plural": true,
+        "plural_form": "fungi",
         "proper": false,
         "word": "fungus"
-    },
-    {
-        "can_be_plural": false,
-        "plural_form": null,
-        "proper": false,
-        "word": "fungi"
     },
     {
         "can_be_plural": true,
@@ -6020,7 +6007,7 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "JELL-O"
     },
     {
@@ -6182,7 +6169,7 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Linux"
     },
     {
@@ -6204,7 +6191,7 @@
         "word": "shack"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
         "word": "radiation"
@@ -6220,12 +6207,6 @@
         "plural_form": null,
         "proper": false,
         "word": "gamma ray"
-    },
-    {
-        "can_be_plural": false,
-        "plural_form": null,
-        "proper": false,
-        "word": "kayaking"
     },
     {
         "can_be_plural": true,
@@ -6252,13 +6233,14 @@
         "word": "moisturizer"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
-        "word": "nachoes"
+        "word": "nachoes",
+        "only_plural": true
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
         "word": "cellulite"
@@ -6276,8 +6258,8 @@
         "word": "cow"
     },
     {
-        "can_be_plural": false,
-        "plural_form": null,
+        "can_be_plural": true,
+        "plural_form": "geese",
         "proper": false,
         "word": "goose"
     },
@@ -6378,8 +6360,8 @@
         "word": "brush"
     },
     {
-        "can_be_plural": false,
-        "plural_form": null,
+        "can_be_plural": true,
+        "plural_form": "teeth",
         "proper": false,
         "word": "tooth"
     },
@@ -6420,8 +6402,8 @@
         "word": "meat"
     },
     {
-        "can_be_plural": false,
-        "plural_form": null,
+        "can_be_plural": true,
+        "plural_form": "loaves",
         "proper": false,
         "word": "loaf"
     },
@@ -6542,7 +6524,7 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Taco Bell"
     },
     {
@@ -6630,10 +6612,11 @@
         "word": "cemetary"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
-        "word": "cement"
+        "word": "cement",
+        "only_plural": true
     },
     {
         "can_be_plural": true,
@@ -6668,7 +6651,7 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Florida"
     },
     {
@@ -6810,10 +6793,10 @@
         "word": "sperm"
     },
     {
-        "can_be_plural": false,
-        "plural_form": null,
+        "can_be_plural": true,
+        "plural_form": "bacteria",
         "proper": false,
-        "word": "bacteria"
+        "word": "bacterium"
     },
     {
         "can_be_plural": true,
@@ -6960,16 +6943,17 @@
         "word": "parade"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
         "word": "tuna"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
-        "word": "salmon"
+        "word": "salmon",
+        "only_plural": true
     },
     {
         "can_be_plural": true,
@@ -6984,10 +6968,10 @@
         "word": "tongue"
     },
     {
-        "can_be_plural": false,
-        "plural_form": null,
+        "can_be_plural": true,
+        "plural_form": "larvae",
         "proper": false,
-        "word": "larvae"
+        "word": "larva"
     },
     {
         "can_be_plural": true,
@@ -7122,10 +7106,11 @@
         "word": "nop"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
-        "word": "kelp"
+        "word": "kelp",
+        "only_plural": true
     },
     {
         "can_be_plural": true,
@@ -7146,7 +7131,7 @@
         "word": "corn dog"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
         "word": "matter"
@@ -7196,7 +7181,7 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Call of Duty"
     },
     {
@@ -7208,7 +7193,7 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Mount Everest"
     },
     {
@@ -7422,10 +7407,11 @@
         "word": "noodle"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
-        "word": "ramen"
+        "word": "ramen",
+        "only_plural": true
     },
     {
         "can_be_plural": true,
@@ -7766,25 +7752,25 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Garfield"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Vancouver"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Canada"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "USA"
     },
     {
@@ -7832,7 +7818,7 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Simba"
     },
     {
@@ -7848,10 +7834,11 @@
         "word": "spank"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
-        "word": "trousers"
+        "word": "trousers",
+        "only_plural": true
     },
     {
         "can_be_plural": true,
@@ -8034,7 +8021,7 @@
         "word": "improvement"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
         "word": "improv"
@@ -8048,13 +8035,13 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Pepsi"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Pepto Bismol"
     },
     {
@@ -8072,7 +8059,7 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Antartica"
     },
     {
@@ -8180,7 +8167,7 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Voyager 1"
     },
     {
@@ -8598,7 +8585,7 @@
         "word": "market"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
         "word": "silk"
@@ -8760,7 +8747,7 @@
         "word": "breath"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
         "word": "copper"
@@ -8988,10 +8975,11 @@
         "word": "eggnog"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
-        "word": "popcorn"
+        "word": "popcorn",
+        "only_plural": true
     },
     {
         "can_be_plural": true,
@@ -9044,13 +9032,13 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Rick Astley"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Katy Perry"
     },
     {
@@ -9080,13 +9068,13 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Reddit"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "4chan"
     },
     {
@@ -9098,7 +9086,7 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "8chan"
     },
     {
@@ -9188,7 +9176,7 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Wikipedia"
     },
     {
@@ -9342,14 +9330,8 @@
         "word": "exoplanet"
     },
     {
-        "can_be_plural": false,
-        "plural_form": null,
-        "proper": false,
-        "word": "nebulae"
-    },
-    {
-        "can_be_plural": false,
-        "plural_form": null,
+        "can_be_plural": true,
+        "plural_form": "nebulae",
         "proper": false,
         "word": "nebula"
     },
@@ -9384,12 +9366,6 @@
         "word": "black hole"
     },
     {
-        "can_be_plural": false,
-        "plural_form": null,
-        "proper": false,
-        "word": "Gabe Newell"
-    },
-    {
         "can_be_plural": true,
         "plural_form": null,
         "proper": false,
@@ -9404,7 +9380,7 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Gordon Freeman"
     },
     {
@@ -9498,15 +9474,15 @@
         "word": "setting"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Nintendo"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Playstation"
     },
     {
@@ -9602,13 +9578,13 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Donald Trump"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Donald Duck"
     },
     {
@@ -9740,19 +9716,19 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Amiibo"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Iceland"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Greenland"
     },
     {
@@ -9764,7 +9740,7 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Fox McCloud"
     },
     {
@@ -9816,10 +9792,11 @@
         "word": "citation"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
-        "word": "link rot"
+        "word": "link rot",
+        "only_plural": true
     },
     {
         "can_be_plural": true,
@@ -9878,7 +9855,7 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Netflix"
     },
     {
@@ -9890,7 +9867,7 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Mega Man"
     },
     {
@@ -10146,7 +10123,7 @@
         "word": "footstool"
     },
     {
-        "can_be_plural": false,
+        "can_be_plural": true,
         "plural_form": null,
         "proper": false,
         "word": "asbestos"
@@ -10208,7 +10185,7 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "John Cena"
     },
     {
@@ -10250,25 +10227,25 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Jupiter"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Uranus"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Saturn"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Mars"
     },
     {
@@ -10310,7 +10287,7 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Dracula"
     },
     {
@@ -10388,19 +10365,19 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Master Chief"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Shrek"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Bilbo Baggins"
     },
     {
@@ -10418,7 +10395,7 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Denmark"
     },
     {
@@ -10682,43 +10659,37 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Bernie Sanders"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
-        "word": "Donald Trump"
-    },
-    {
-        "can_be_plural": false,
-        "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Ted Cruz"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Marco Rubio"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Hillary Clinton"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Ben Carson"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Jeb Bush"
     },
     {
@@ -10904,55 +10875,55 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Papyrus"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Sans"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Frisk"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Toriel"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Asgore"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Alphys"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "W.D. Gaster"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Undyne"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Mettaton"
     },
     {
@@ -10994,7 +10965,7 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Kirk Cameron"
     },
     {
@@ -11018,13 +10989,13 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Frosted Flakes"
     },
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Tony the Tiger"
     },
     {
@@ -11042,7 +11013,7 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Sonic the Hedgehog"
     },
     {
@@ -11114,7 +11085,7 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Mexico"
     },
     {
@@ -11150,7 +11121,7 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Goku"
     },
     {
@@ -11360,7 +11331,7 @@
     {
         "can_be_plural": false,
         "plural_form": null,
-        "proper": false,
+        "proper": true,
         "word": "Piccaso"
     },
     {

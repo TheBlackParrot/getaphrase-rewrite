@@ -7859,5 +7859,10 @@
         "word": "Chicago",
         "can_be_plural": false,
         "proper": true
+    },
+    {
+        "word": "Rick Harrison",
+        "can_be_plural": false,
+        "proper": true
     }
 ]

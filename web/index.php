@@ -97,7 +97,6 @@
 		}
 		#phrase {
 			font-family: "<?php echo $font; ?>", sans-serif;
-			font-size: 10vw;
 			font-weight: <?php echo $weight; ?>;
 			<?php foreach($effects as $effect) {
 				echo($effect);

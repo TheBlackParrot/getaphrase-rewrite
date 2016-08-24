@@ -88,8 +88,8 @@
     "can i [verb] [article] [noun]? please?",
     "would you [verb] [article] [noun]?",
     "dreaming of [adjective] [noun]",
-    "if only i could [adverb] [verb]",
-    "if only i could [verb]",
+    "if only i could [adverb] [verb]...",
+    "if only i could [verb]...",
     "great, another [adjective] [noun:singular]",
     "dude, nice! [adjective] [noun:plural]",
     "[adjective] [noun:plural]? just end me now",
@@ -102,5 +102,7 @@
     "what?? no [verb:ing] [adjective] [noun]??",
     "[adjective] [noun:plural] are becoming [verb]",
     "[article] [adverb] [verb] [noun]",
-    "ever seen [article] [adjective] [noun]? i have"
+    "ever seen [article] [adjective] [noun]? i have",
+    "never have i ever [verb:past] [article] [noun:singular]",
+    "i've totally [verb:past] [article] [noun:singular] before"
 ]

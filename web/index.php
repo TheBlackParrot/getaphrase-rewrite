@@ -28,11 +28,21 @@
 	} else {
 		$data_j = str_replace('\'', '\\\'', json_encode($data));
 	}
+
+	$colors = json_decode(file_get_contents("lists/colors.json"), true);
+	if(mt_rand(0, 1)) {
+		$fg = $colors["light"][mt_rand(0, count($colors["light"])-1)];
+		$bg = $colors["dark"][mt_rand(0, count($colors["dark"])-1)];
+	} else {
+		$bg = $colors["light"][mt_rand(0, count($colors["light"])-1)];
+		$fg = $colors["dark"][mt_rand(0, count($colors["dark"])-1)];
+	}
 ?>
 
 <html>
 
 <head>
+	<title>get a phrase: <?php echo $data['phrase'] . ' (ID ' . $data['id'] . ')'; ?></title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 
@@ -42,6 +52,10 @@
 	</script>
 	<style>
 		@import 'https://fonts.googleapis.com/css?family=<?php echo $font_safe; ?>';
+		.wrapper {
+			background-color: #<?php echo $bg; ?>;
+			color: #<?php echo $fg; ?>;
+		}
 		#phrase {
 			font-family: "<?php echo $font; ?>", sans-serif;
 			font-size: 10vw;
@@ -52,6 +66,11 @@
 <body>
 	<div class="wrapper">
 		<div id="phrase"><?php echo $data['phrase']; ?></div>
+		<?php
+			if(!$data['phrase']) {
+				echo "<span>something has gone wrong here, just refresh.</span>";
+			}
+		?>
 	</div>
 	<div class="bottom">
 		<div class="left">

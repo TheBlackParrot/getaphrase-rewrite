@@ -274,7 +274,10 @@ class TemplateString():
 							self.parts.remove(part);
 							continue;
 
+					try:
 						next = next.word;
+					except:
+						pass;
 
 					if next[0] in vowels and str(part) in vowels:
 						part.needs_n();

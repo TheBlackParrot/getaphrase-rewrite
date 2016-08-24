@@ -13,7 +13,7 @@ body {
 
 a {
 	text-decoration: none;
-	color: #000;
+	color: #fff;
 	cursor: pointer; /* wtf */
 }
 
@@ -25,6 +25,7 @@ a {
 }
 
 .bottom {
+	color: #fff;
 	position: fixed;
 	bottom: 0;
 	padding: 16px;
@@ -32,6 +33,10 @@ a {
 	background-color: rgba(0, 0, 0, 0.2);
 	box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
 	line-height: 18px;
+}
+
+.bottom .left, .bottom .right {
+	-webkit-filter: drop-shadow( 0px 2px 1px rgba(0, 0, 0, 0.5) );
 }
 
 .bottom .left {

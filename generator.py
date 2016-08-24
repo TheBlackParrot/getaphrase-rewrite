@@ -4,6 +4,8 @@ import random;
 import re;
 import copy;
 
+#random.seed(42);
+
 vowels = ["a", "e", "i", "o", "u"];
 nouns = [];
 adjectives = [];
@@ -328,12 +330,6 @@ class TemplateString():
 
 		return " ".join(final);
 
-main_choices = [
-	"[adjective] [noun]",
-	"[article] [adjective] [noun]"
-]
-	
-'''
 for i in range(0, 10):
 	main_choices = [
 		"[adjective] [noun]",
@@ -345,4 +341,3 @@ for i in range(0, 10):
 
 	test = TemplateString(template);
 	print(str(test));
-'''

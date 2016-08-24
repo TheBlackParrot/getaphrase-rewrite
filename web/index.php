@@ -82,7 +82,7 @@
 <head>
 	<title>get a phrase: <?php echo $data['phrase'] . ' (ID ' . $data['id'] . ')'; ?></title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css?cloudflare_is_bad=2">
 
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script>

@@ -81,6 +81,7 @@
 
 <head>
 	<title>get a phrase: <?php echo $data['phrase'] . ' (ID ' . $data['id'] . ')'; ?></title>
+	<meta id="met-desc" name="description" content="<?php echo $data['phrase']; ?>">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css?cloudflare_is_bad=2">
 
@@ -111,7 +112,13 @@
 		<div id="phrase"><?php echo $data['phrase']; ?></div>
 		<?php
 			if(!$data['phrase']) {
-				echo '<script>console.log("$data[\"phrase\"] was empty, fell back to JS to render text");$("#phrase").text(data.phrase);</script>';
+				echo '<script>
+					console.log("$data[\"phrase\"] was empty, fell back to JS to render text");
+					$("#phrase").text(data.phrase);
+					$("#permalink").attr("href", "index.php?id=" + data.id);
+					$("title").text("get a phrase: " + data.phrase + " (ID " + data.id + ")");
+					$("#met-desc").attr("content", data.phrase);
+				</script>';
 			}
 		?>
 	</div>
@@ -121,7 +128,7 @@
 			<iframe style="margin-left: 24px;" src="https://ghbtns.com/github-btn.html?user=theblackparrot&repo=getaphrase-2&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
 		</div>
 		<div class="right">
-			<a href="index.php?id=<?php echo $data['id']; ?>">permalink</a>
+			<a id="permalink" href="index.php?id=<?php echo $data['id']; ?>">permalink</a>
 		</div>
 	</div>
 </body>

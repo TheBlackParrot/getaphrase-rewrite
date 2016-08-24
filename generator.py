@@ -4,6 +4,8 @@ import random;
 import re;
 import copy;
 
+#random.seed(42);
+
 vowels = ["a", "e", "i", "o", "u"];
 nouns = [];
 adjectives = [];
@@ -290,6 +292,11 @@ class TemplateString():
 						while part.only_plural:
 							_ = part.args
 							part = Noun(_, **random.choice(nouns));
+				else:
+					while "plural" in part.args and not part.can_be_plural:
+						_ = part.args
+						part = Noun(_, **random.choice(nouns));
+
 
 			if type(part) == Verb:
 				if "ing" in part.args:
@@ -323,7 +330,7 @@ class TemplateString():
 
 		return " ".join(final);
 
-for i in range(0, 20):
+for i in range(0, 10):
 	main_choices = [
 		"[adjective] [noun]",
 		"[article] [adjective] [noun]"

@@ -168,5 +168,105 @@
 		"word": "smooch",
 		"past_tense": "smooched",
 		"ing": "smooching"
+	},
+	{
+		"word": "forget",
+		"past_tense": "forgot",
+		"ing": "forgetting"
+	},
+	{
+		"word": "review",
+		"past_tense": "reviewed",
+		"ing": "reviewing"
+	},
+	{
+		"word": "program",
+		"past_tense": "programmed",
+		"ing": "programming"
+	},
+	{
+		"word": "shop",
+		"past_tense": "shopped",
+		"ing": "shopping"
+	},
+	{
+		"word": "browse",
+		"past_tense": "browsed",
+		"ing": "browsing"
+	},
+	{
+		"word": "hide",
+		"past_tense": "hid",
+		"ing": "hiding"
+	},
+	{
+		"word": "play",
+		"past_tense": "played",
+		"ing": "playing"
+	},
+	{
+		"word": "try",
+		"past_tense": "tried",
+		"ing": "trying"
+	},
+	{
+		"word": "survive",
+		"past_tense": "survived",
+		"ing": "surviving"
+	},
+	{
+		"word": "vape",
+		"past_tense": "vaped",
+		"ing": "vaping"
+	},
+	{
+		"word": "meme",
+		"past_tense": "memed",
+		"ing": "memeing"
+	},
+	{
+		"word": "burn",
+		"past_tense": "burned",
+		"ing": "burning"
+	},
+	{
+		"word": "stream",
+		"past_tense": "streamed",
+		"ing": "streaming"
+	},
+	{
+		"word": "download",
+		"past_tense": "downloaded",
+		"ing": "downloading"
+	},
+	{
+		"word": "learn",
+		"past_tense": "learned",
+		"ing": "learning"
+	},
+	{
+		"word": "commentate",
+		"past_tense": "commentated",
+		"ing": "commentating"
+	},
+	{
+		"word": "conversate",
+		"past_tense": "conversated",
+		"ing": "conversating"
+	},
+	{
+		"word": "dance",
+		"past_tense": "danced",
+		"ing": "dancing"
+	},
+	{
+		"word": "crush",
+		"past_tense": "crushed",
+		"ing": "crushing"
+	},
+	{
+		"word": "vote",
+		"past_tense": "voted",
+		"ing": "voting"
 	}
 ]

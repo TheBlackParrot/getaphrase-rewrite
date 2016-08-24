@@ -3980,7 +3980,8 @@
     },
     {
         "can_be_plural": true,
-        "word": "wife"
+        "word": "wife",
+        "plural_form": "wives"
     },
     {
         "can_be_plural": true,
@@ -7013,10 +7014,6 @@
     {
         "can_be_plural": true,
         "word": "ogre"
-    },
-    {
-        "can_be_plural": true,
-        "word": "snuggle"
     },
     {
         "can_be_plural": false,

@@ -75,7 +75,7 @@
     "chowing down on [article] [adjective] [noun:singular]",
     "chowing down on [adjective] [noun:plural]",
     "things that belong in the trash: [adjective] [noun:plural]",
-    "[article] [noun] wants to [verb]",
+    "[article] [noun:singular] wants to [verb]",
     "can [article] [adjective] [noun] [verb]?",
     "I'm currently [verb:ing] [adverb]",
     "to [verb] or not to [verb:again], thought [article] [noun:singular]",

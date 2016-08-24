@@ -225,8 +225,7 @@ class TemplateString():
 
 				if "again" in args:
 					multiple = False;
-					print(self.parts);
-					print(list(reversed(self.parts)));
+
 					if args[0].title() in globals():
 						for part in list(reversed(self.parts)):
 							if type(part) == globals()[args[0].title()]:
@@ -332,7 +331,7 @@ main_choices = [
 	"[adjective] [noun]",
 	"[article] [adjective] [noun]"
 ]
-	
+
 '''
 for i in range(0, 10):
 	main_choices = [

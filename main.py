@@ -1,6 +1,9 @@
+#!/usr/bin/python
+
 import generator;
 import db._db as db;
 import random;
+import json;
 
 main_choices = [
 	"[adjective] [noun]",
@@ -11,8 +14,7 @@ if not random.randint(0, 2):
 	template = random.choice(generator.phrases);
 
 test = generator.TemplateString(template);
-db.add_phrase(str(test));
-print(str(test));
 
-got = db.fetch_phrase(0)
-print(got);
+out = db.add_phrase(str(test));
+
+print(json.dumps(out));

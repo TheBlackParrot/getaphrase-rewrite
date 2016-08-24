@@ -1,0 +1,43 @@
+@import 'https://fonts.googleapis.com/css?family=Noto+Sans';
+
+body {
+	font-family: "Noto Sans", sans-serif;
+	font-size: 12px;
+}
+
+.wrapper {
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+	cursor: pointer; /* wtf */
+}
+
+#phrase {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+}
+
+.bottom {
+	position: fixed;
+	bottom: 0;
+	padding: 16px;
+	width: calc(100% - 32px);
+	background-color: rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+	line-height: 18px;
+}
+
+.bottom .left {
+	float: left;
+}
+
+.bottom .right {
+	float: right;
+}

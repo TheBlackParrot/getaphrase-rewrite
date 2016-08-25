@@ -1,10 +1,6 @@
 <?php
 	include dirname(__FILE__) . "/config.php";
 
-	$fonts = json_decode(file_get_contents("lists/fonts.json"));
-	$font = $fonts[mt_rand(0, count($fonts)-1)];
-	$font_safe = str_replace(" ", "+", $font);
-
 	if(isset($_GET['id'])) {
 		if(ctype_alnum($_GET['id'])) {
 			if($stmt = $mysqli->prepare("SELECT * FROM cache WHERE id = ?")) {
@@ -35,6 +31,14 @@
 		}
 		$data_j = str_replace('\'', '\\\'', json_encode($data));
 	}
+
+	if(isset($data['id'])) {
+		mt_srand(base_convert($data['id'], 32, 10));
+	}
+	
+	$fonts = json_decode(file_get_contents("lists/fonts.json"));
+	$font = $fonts[mt_rand(0, count($fonts)-1)];
+	$font_safe = str_replace(" ", "+", $font);
 
 	$colors = json_decode(file_get_contents("lists/colors.json"), true);
 	if(mt_rand(0, 1)) {

@@ -87,7 +87,7 @@
 	<title>get a phrase: <?php echo $data['phrase'] . ' (ID ' . $data['id'] . ')'; ?></title>
 	<meta id="met-desc" name="description" content="<?php echo $data['phrase']; ?>">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css?cloudflare_is_bad=2">
+	<link rel="stylesheet" type="text/css" href="css/main.css?cloudflare_is_bad=3">
 
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script>

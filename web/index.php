@@ -110,27 +110,32 @@
 <body>
 	<div class="wrapper">
 		<div id="phrase"><?php echo $data['phrase']; ?></div>
-		<?php
-			if(!$data['phrase']) {
-				echo '<script>
-					console.log("$data[\"phrase\"] was empty, fell back to JS to render text");
-					$("#phrase").text(data.phrase);
-					$("#permalink").attr("href", "index.php?id=" + data.id);
-					$("title").text("get a phrase: " + data.phrase + " (ID " + data.id + ")");
-					$("#met-desc").attr("content", data.phrase);
-				</script>';
-			}
-		?>
 	</div>
-	<div class="bottom">
-		<div class="left">
-			<a href="https://twitter.com/getaphrase" class="twitter-follow-button" data-show-count="true">Follow @getaphrase</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-			<iframe style="margin-left: 24px;" src="https://ghbtns.com/github-btn.html?user=theblackparrot&repo=getaphrase-2&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
+	<?php
+		if(!isset($_GET['hide_bottom'])) {
+	?>
+		<div class="bottom">
+			<div class="left">
+				<a href="https://twitter.com/getaphrase" class="twitter-follow-button" data-show-count="true">Follow @getaphrase</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+				<iframe style="margin-left: 24px;" src="https://ghbtns.com/github-btn.html?user=theblackparrot&repo=getaphrase-2&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
+			</div>
+			<div class="right">
+				<a id="permalink" href="index.php?id=<?php echo $data['id']; ?>">permalink</a>
+			</div>
 		</div>
-		<div class="right">
-			<a id="permalink" href="index.php?id=<?php echo $data['id']; ?>">permalink</a>
-		</div>
-	</div>
+	<?php
+		}
+
+		if(!$data['phrase']) {
+			echo '<script>
+				console.log("$data[\"phrase\"] was empty, fell back to JS to render text");
+				$("#phrase").text(data.phrase);
+				$("#permalink").attr("href", "index.php?id=" + data.id);
+				$("title").text("get a phrase: " + data.phrase + " (ID " + data.id + ")");
+				$("#met-desc").attr("content", data.phrase);
+			</script>';
+		}
+	?>
 </body>
 
 </html>

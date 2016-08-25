@@ -285,7 +285,10 @@ class TemplateString():
 			if type(part) == Noun:
 				if part.can_be_plural:
 					if "singular" not in part.args:
-						if not random.randint(0, 2) or "plural" in part.args:
+						if not random.randint(0, 3) or "plural" in part.args:
+							while not part.can_be_plural:
+								_ = part.args
+								part = Noun(_, **random.choice(nouns));								
 							self.plural_phrase = True;
 							part.plural();
 					elif "singular" in part.args:
@@ -297,6 +300,8 @@ class TemplateString():
 						_ = part.args
 						part = Noun(_, **random.choice(nouns));
 
+				if self.parts[index] != part:
+					self.parts[index] = part;
 
 			if type(part) == Verb:
 				if "ing" in part.args:
